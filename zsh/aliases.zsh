@@ -1,3 +1,31 @@
+#Functions
+weather () {
+        if [ -z "$1" ]
+        then
+                curl "http://wttr.in/Sheffield"
+        else
+                curl "http://wttr.in/$1"
+        fi
+}
+
+killrails () {
+        if [ -z "$1" ]
+        then
+                fuser -k 3000/tcp
+        else
+                fuser -k $1/tcp
+        fi
+}
+
+export GOROOT="$HOME/projects/go/"
+export GOPATH="$HOME/projects/go/"
+export PATH="$HOME/.rbenv/bin:$HOME/.ndenv/bin:$HOME/bin:$PATH:$GOROOT/bin"
+export PATH="$PATH:~/.composer/vendor/bin:~/bin:/usr/local/go/bin:/usr/local/mongodb/bin"
+
+
+eval "$(rbenv init -)"
+eval "$(ndenv init -)"
+
 alias szshrc='source ~/.zshrc'
 alias du='du -h'
 alias df='df -h'
@@ -54,6 +82,15 @@ alias  gs='git status'
 alias  gl='git l'
 alias  gp='git pull'
 alias gaa='git add -A'
+alias gpa="git push ; git push bitbucket ; git push stash"
+
+# Rails
+alias rs="./bin/rails s"
+alias rc="./bin/rails c"
+alias kr="killrails"
+alias be="./bin/bundle exec"
+
+
 
 # Maven
 alias m='mvn-in-colors'

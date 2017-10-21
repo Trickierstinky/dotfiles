@@ -12,8 +12,8 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-completions src
   zgen load olivierverdier/zsh-git-prompt
   zgen load chrissicool/zsh-256color
-  zgen load johnhamelink/rvm-zsh
   zgen load johnhamelink/env-zsh
+  zgen load cswl/zsh-rbenv
   zgen load theunraveler/zsh-fancy_ctrl_z
   zgen load tomsquest/nvm-init.zsh
   zgen load tomsquest/nvm-auto-use.zsh

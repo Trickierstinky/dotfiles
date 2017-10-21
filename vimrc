@@ -94,7 +94,7 @@ set sidescroll=1
 " Apparence
 set background=dark
 set t_Co=256
-colorscheme Tomorrow-Night
+colorscheme Brogrammer
 
 " Highlight current line
 set cursorline
@@ -208,20 +208,6 @@ if has('gui_running')
   set lines=50 columns=120
 end
 
-
-"
-" File explorer config
-"
-
-" Show/hide
-"map <F1> :Vex<CR>
-"
-" Use tree-mode as default view
-let g:netrw_liststyle=3
-" Open file in previous buffer
-let g:netrw_browse_split=4
-" preview window shown in a vertically split
-let g:netrw_preview=1
 
 "
 " CtrlP

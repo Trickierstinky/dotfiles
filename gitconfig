@@ -1,7 +1,6 @@
 [user]
-	name = Thomas Queste
-	email = tom@tomsquest.com
-	signingkey = 0x46ABEB7FF623F5EB
+	user = Matt Deloughry
+	email = matt@deloughry.com 
 [alias]
 	co = checkout
 	ci = commit
@@ -25,7 +24,7 @@
 	default = simple
 [pull]
 	# pull will do a rebase instead of a merge
-	rebase = true
+	rebase = false
 [help]
 	autocorrect = 1
 [tag]
@@ -43,12 +42,3 @@
 	autostash = true
 [status]
 	showUntrackedFiles = all
-[merge]
-	# Show more context in conflict
-	conflictstyle = diff3
-	tool = intellij
-[mergetool "intellij"]
-	cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
-	trustExitCode = true
-[difftool "intellij"]
-	cmd = idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")

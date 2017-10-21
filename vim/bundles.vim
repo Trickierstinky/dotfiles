@@ -9,8 +9,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim'}
 Plugin 'tpope/vim-unimpaired'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'briandoll/change-inside-surroundings.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-powerline'
