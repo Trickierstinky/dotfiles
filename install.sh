@@ -33,6 +33,8 @@ link_if_missing $PWD/tmux.conf              $HOME/.tmux.conf
 link_if_missing $PWD/vimrc                  $HOME/.vimrc
 link_if_missing $PWD/zshrc                  $HOME/.zshrc
 
+git clone https://github.com/riywo/ndenv  $HOME/.ndenv   
+git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
 
 # Install vim plugins using Vundle
 vim +PluginInstall +qall

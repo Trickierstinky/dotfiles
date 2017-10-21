@@ -59,7 +59,7 @@ setopt complete_aliases
 export EDITOR='/usr/bin/vim'
 export VISUAL='/usr/bin/vim'
 export LESS='--ignore-case --RAW-CONTROL-CHARS --LONG-PROMPT --quit-if-one-screen --hilite-unread --tabs=4'
-eval $(lesspipe)
+
 # Colors for less binary.
 # Src: https://unix.stackexchange.com/questions/119/colors-in-man-pages/147#147
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # green
@@ -130,3 +130,4 @@ source ~/.zsh/rupa-z/z.sh
 # Create directory and move into
 mcd() { [ -n "$1" ] && mkdir -p "$1" && cd "$1"}
 
+eval "$(rbenv init -)"
