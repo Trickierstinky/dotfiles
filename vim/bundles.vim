@@ -18,6 +18,7 @@ Plugin 'tomtom/quickfixsigns_vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ap/vim-buftabline'
 
 
 " All of your Plugins must be added before the following line

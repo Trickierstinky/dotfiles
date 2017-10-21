@@ -213,10 +213,13 @@ end
 " CtrlP
 "
 
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-B> :bprev<CR>
+
 " Opens buffer list
 map <Leader>b :CtrlPBuffer<CR>
 " Some more ignored dirs
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\target$\|\.class$\|\.settings$'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\target$\|\.class$\|\.settings\|node_modules\|DS_Store$'
 " Increase windows height
 let g:ctrlp_max_height = 30
 
