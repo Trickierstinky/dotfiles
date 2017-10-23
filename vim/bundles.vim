@@ -20,6 +20,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ap/vim-buftabline'
 Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'mileszs/ack.vim'
 
 
 " All of your Plugins must be added before the following line
