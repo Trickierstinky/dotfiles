@@ -94,7 +94,7 @@ set sidescroll=1
 " Apparence
 set background=dark
 set t_Co=256
-colorscheme Brogrammer
+colorscheme brogrammer
 
 " Highlight current line
 set cursorline

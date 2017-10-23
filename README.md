@@ -5,7 +5,7 @@ My config files, heavily commented.
 ## Installation
 
 ``` bash
-git clone https://tomsquest@github.com/tomsquest/dotfiles.git ~/.dotfiles
+git clone https://trickierstinky@github.com/trickierstinky/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```
@@ -16,8 +16,8 @@ cd ~/.dotfiles
 * ZSH Prompt:
 
  ``` bash
-06:42:21 /home/tom/.dotfiles ------------------------------
-$                                            (master|●1✚1…)
+06:42:21 /home/mdeloughry/.dotfiles ------------------------------
+$                                                   (master|●1✚1…)
 ```
 
 - ZSH plugins with [Zgen](https://github.com/tarjoilija/zgen)
@@ -29,5 +29,4 @@ $                                            (master|●1✚1…)
 Others:
 
 - Git config
-- Termninator, Openbox config
-- '.desktop' files pointing to `~/Apps/$the-app/current/$the-launcher`
+- Termninato

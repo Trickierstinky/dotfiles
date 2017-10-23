@@ -18,3 +18,13 @@ target/
 .DS_Store
 Thumbs.db
 .env
+*.swp
+
+node_modules/
+npm-debug.log
+
+*.tags
+
+.vscode/
+
+.tags
