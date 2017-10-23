@@ -213,8 +213,8 @@ end
 " CtrlP
 "
 
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-B> :bprev<CR>
+nnoremap <C-K> :bnext<CR>
+nnoremap <C-J> :bprev<CR>
 
 " Opens buffer list
 map <Leader>b :CtrlPBuffer<CR>
@@ -225,3 +225,7 @@ let g:ctrlp_max_height = 30
 
 set backspace=indent,eol,start
 set colorcolumn=80,120
+
+" Completeion
+:set completeopt=longest,menuone
+:inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
