@@ -218,8 +218,11 @@ nnoremap <C-J> :bprev<CR>
 
 " Opens buffer list
 map <Leader>b :CtrlPBuffer<CR>
+
 " Some more ignored dirs
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\target$\|\.class$\|\.settings\|node_modules\|DS_Store$'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\target$\|\.class$\|\.settings\|node_modules\|DS_Store\|public\/system$'
 " Increase windows height
 let g:ctrlp_max_height = 30
 
