@@ -251,4 +251,7 @@ map <Leader>3 :lnext<CR>
 
 let g:buftabline_indicators = 1
 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
