@@ -174,8 +174,6 @@ vmap <S-tab> <gv
 
 " Easy navigation between windows
 map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 "
@@ -248,6 +246,9 @@ map <Leader>1 :lopen<CR>
 map <Leader>2 :lclose<CR>
 map <Leader>3 :lnext<CR>
 
+"OS X and Windows systems only have 1 clipboard
+noremap <C-S-c> "+y<CR>
+noremap <C-S-v> "+p<CR>
 
 let g:buftabline_indicators = 1
 
