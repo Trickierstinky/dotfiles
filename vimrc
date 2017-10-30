@@ -290,12 +290,12 @@ vnoremap <S-F12>   :TrimSpaces<CR>
 vnoremap <F9> :sort<CR>
 
 "move lines
-inoremap <C-S-j> <Esc>:m .+1<CR>==gi
-inoremap <C-S-k> <Esc>:m .-2<CR>==gi
-nnoremap <C-S-k> :m .-2<CR>==
-nnoremap <C-S-j> :m .+1<CR>==
-vnoremap <C-S-j> :m '>+1<CR>gv=gv
-vnoremap <C-S-k> :m '<-2<CR>gv=gv
+inoremap <S-j> <Esc>:m .+1<CR>==gi
+inoremap <S-k> <Esc>:m .-2<CR>==gi
+nnoremap <S-k> :m .-2<CR>==
+nnoremap <S-j> :m .+1<CR>==
+vnoremap <S-j> :m '>+1<CR>gv=gv
+vnoremap <S-k> :m '<-2<CR>gv=gv
 
 :set number relativenumber
 
