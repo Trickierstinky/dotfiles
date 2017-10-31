@@ -290,8 +290,8 @@ vnoremap <S-F12>   :TrimSpaces<CR>
 vnoremap <F9> :sort<CR>
 
 "move lines
-inoremap <S-j> <Esc>:m .+1<CR>==gi
-inoremap <S-k> <Esc>:m .-2<CR>==gi
+inoremap <S-A-j> <Esc>:m .+1<CR>==gi
+inoremap <S-A-k> <Esc>:m .-2<CR>==gi
 nnoremap <S-k> :m .-2<CR>==
 nnoremap <S-j> :m .+1<CR>==
 vnoremap <S-j> :m '>+1<CR>gv=gv
