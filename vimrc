@@ -300,3 +300,6 @@ nnoremap <S-j> :m .+1<CR>==
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
+
+" remove auto comment
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
