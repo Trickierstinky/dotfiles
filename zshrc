@@ -28,3 +28,5 @@ source ~/.zsh/prompt.zsh
 if [ -f ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
+
+if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
