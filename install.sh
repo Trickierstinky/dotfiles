@@ -34,6 +34,7 @@ link_if_missing $PWD/vimrc                  $HOME/.vimrc
 link_if_missing $PWD/zshrc                  $HOME/.zshrc
 
 link_if_missing $PWD/i3/config/config       $HOME/.config/i3/config
+link_if_missing $PWD/i3/i3exit              $HOME/.config/i3/i3exit
 link_if_missing $PWD/i3/i3status/config       $HOME/.config/i3status/config
 link_if_missing $PWD/termite/config       $HOME/.config/termite/config
 

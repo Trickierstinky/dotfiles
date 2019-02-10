@@ -178,3 +178,8 @@ bar {
 }
 
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+
+# Screensaver and Power Management
+exec xset dpms 300
+exec xset led 2 # num lock
+exec xss-lock -- ~/.i3/i3exit lock

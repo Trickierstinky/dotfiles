@@ -1,5 +1,8 @@
 # zgen
-TERMINAL=termite
+export TERMINAL=termite
+# activate keyring capabilities
+source ~/.i3/start-gnome-keyring.sh
+
 source "${HOME}/.zsh/zgen/zgen.zsh"
 if ! zgen saved; then
   echo "Creating a zgen save"

@@ -64,3 +64,8 @@ alias  mpt='mvn package -Dmaven.test.skip=true'
 alias  mci='mvn clean install'
 alias mcit='mvn clean install -Dmaven.test.skip=true'
 alias  mdt="mvn dependency:tree"
+
+
+export TERMINAL=termite
+# activate keyring capabilities
+source ~/.i3/start-gnome-keyring.sh
