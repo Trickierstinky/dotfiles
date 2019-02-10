@@ -159,7 +159,7 @@ bar {
         inactive_workspace	#2f343f	#2f343f	#d8dee8
         urgent_workspace	#2f343f	#ebcb8b	#2f343f
     }
-        status_command i3status
+        status_command i3status | ~/.dotfiles/i3/i3spotify/pystatus.py
         position top
 }
 
