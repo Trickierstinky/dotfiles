@@ -3,13 +3,13 @@ set $super Mod4
 set $alt Mod1
 
 # name workspaces
-set $ws1 "1:term"
-set $ws2 "2:web"
-set $ws3 "3:dev"
-set $ws4 "4:conv"
-set $ws5 "5:media"
-set $ws6 "6:vm"
-set $ws7 "7:misc"
+set $ws1 "1 "
+set $ws2 "2 "
+set $ws3 "3 "
+set $ws4 "4 "
+set $ws5 "5 "
+set $ws6 "6 vm"
+set $ws7 "7 misc"
 
 # set font
 font pango: Noto Sans 8
@@ -32,7 +32,7 @@ exec --no-startup-id ssh-agent
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
 
 # start a terminal
-bindsym $super+Return exec i3-sensible-terminal
+bindsym $super+Return exec termite
 
 # start dmenu (a program launcher)
 bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
@@ -132,10 +132,10 @@ bindsym $super+r mode "resize"
 
 
 # window rules, you can find the window class using xprop
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 1
 
 # colour of border, background, text, indicator, and child_border
-client.focused			#bf616a #2f343f #d8dee8 #bf616a #d8dee8
+client.focused			#f59335 #2f343f #d8dee8 #f59335 #d8dee8
 client.focused_inactive	#2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.unfocused		#2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent			#2f343f #2f343f #d8dee8 #2f343f #2f343f
@@ -154,11 +154,12 @@ bar {
         separator #4b5262
 
 		# colour of border, background, and text
-        focused_workspace	#2f343f	#bf616a	#d8dee8
+        focused_workspace	#2f343f	#f59335	#d8dee8
         active_workspace	#2f343f	#2f343f	#d8dee8
         inactive_workspace	#2f343f	#2f343f	#d8dee8
         urgent_workspace	#2f343f	#ebcb8b	#2f343f
     }
         status_command i3status
+        position top
 }
 

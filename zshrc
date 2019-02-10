@@ -1,4 +1,5 @@
 # zgen
+TERMINAL=termite
 source "${HOME}/.zsh/zgen/zgen.zsh"
 if ! zgen saved; then
   echo "Creating a zgen save"
