@@ -1,7 +1,7 @@
 # set modifier
 set $super Mod4
 set $alt Mod1
-
+set $TERMINAL 'termite'
 # name workspaces
 set $ws1 "1 "
 set $ws2 "2 "
@@ -45,7 +45,7 @@ bindsym $super+Shift+w exec google-chrome;workspace $ws2;focus
 bindsym $super+Shift+e exec code;workspace $ws3;focus
 bindsym $super+Shift+s exec slack;workspace $ws4;focus
 bindsym $super+Shift+f exec nemo;focus
-bindsym $super+Alt+f exec ranger;workspace $ws1;focus
+bindsym $super+$alt+f exec ranger;workspace $ws1;focus
 bindsym $super+a exec nordvpn connect;
 bindsym $super+Shift+a exec nordvpn disconnect;
 bindsym $super+$alt+a exec notify-send NordVPN "$(nordvpn status | grep Status)";
@@ -129,6 +129,19 @@ mode "resize" {
         bindsym Return mode "default"
 }
 bindsym $super+r mode "resize"
+
+# Launch mode, one app per key.
+mode "launch" {
+    bindsym c exec google-chrome ; mode "default";workspace $ws2;focus
+    bindsym f exec nemo ; mode "default";
+    bindsym s exec spotify ; mode "default";workspace $ws5;focus
+    bindsym c exec slack; mode "default"; workspace $ws4; focus
+    bindsym t exec thunderbird ; mode "default";workspace $ws4;focus
+    bindsym p exec Popcorn-Time; mode "default"; workspace $ws7;focus
+
+    bindsym Escape mode "default"
+}
+bindsym $super+Tab mode "launch"
 
 
 # window rules, you can find the window class using xprop
