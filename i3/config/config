@@ -29,7 +29,7 @@ gaps outer 5
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b
 exec --no-startup-id ssh-agent
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
 
 # start a terminal
