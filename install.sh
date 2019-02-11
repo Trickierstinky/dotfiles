@@ -33,12 +33,13 @@ link_if_missing $PWD/tmux.conf              $HOME/.tmux.conf
 link_if_missing $PWD/vimrc                  $HOME/.vimrc
 link_if_missing $PWD/zshrc                  $HOME/.zshrc
 
-mkdir -p $HOME/dunst/ $HOME/i3 $HOME/i3status $HOME/termite
 link_if_missing $PWD/i3/config/config       $HOME/.config/i3/config
 link_if_missing $PWD/i3/i3exit              $HOME/.config/i3/i3exit
 link_if_missing $PWD/i3/i3status/config       $HOME/.config/i3status/config
 link_if_missing $PWD/termite/config       $HOME/.config/termite/config
 link_if_missing $PWD/dunst/dunstrc       $HOME/.config/dunst
+link_if_missing $PWD/i3/i3blocks  $HOME/.config/i3blocks
+link_if_missing $PWD/i3/scripts $HOME/.config/i3misc
 
 git clone https://github.com/riywo/ndenv  $HOME/.ndenv
 git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
