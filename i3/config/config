@@ -87,13 +87,20 @@ bindsym $super+v split v
 bindsym $super+f fullscreen toggle
 
 # change container layout split
-bindsym $super+s layout toggle split
+bindsym $super+s layout split toggle
+
+# change container layout tabbed
+bindsym $super+w layout tabbed
 
 # toggle tiling / floating
 bindsym $super+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $super+Shift+space focus mode_toggle
+
+# move workspace to monitor
+bindsym $super+$alt+Left move workspace to output left
+bindsym $super+$alt+Right move workspace to output right
 
 # switch to workspace
 bindsym $alt+Control+Right workspace next

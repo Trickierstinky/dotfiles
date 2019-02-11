@@ -13,41 +13,40 @@ order += "cpu_temperature 0"
 order += "disk /"
 order += "disk /home"
 order += "wireless wlp3s0"
-order += "ethernet enp0s25"
+order += "ethernet eth0"
 order += "volume master"
-order += "battery 0"
 order += "tztime local"
 
 load {
-        format = "<span background='#f59335'>  %5min </span>"
+        format = "<span background='#f59335'>  %5min </span>"
 }
 
 cpu_temperature 0 {
-        format = "<span background='#bf616a'>  %degrees °C </span>"
+        format = "<span background='#bf616a'>  %degrees °C </span>"
         path = "/sys/class/thermal/thermal_zone0/temp"
 }
 
 disk "/" {
-        format = "<span background='#fec7cd'>  %free Free </span>"
+        format = "<span background='#fec7cd'>  %free Free </span>"
 }
 
 disk "/home" {
-        format = "<span background='#a1d569'>  %free Free </span>"
+        format = "<span background='#a1d569'>  %free Free </span>"
 }
 
-ethernet enp0s25 {
-        format_up = "<span background='#88c0d0'>  %ip </span>"
-        format_down = "<span background='#88c0d0'>   D </span>"
+ethernet eth0 {
+        format_up = "<span background='#88c0d0'>  %ip </span>"
+        format_down = "<span background='#88c0d0'>   D </span>"
 }
 
 wireless wlp3s0 {
-        format_up = "<span background='#b48ead'>  %essid %ip </span>"
-        format_down = "<span background='#b48ead'>   D </span>"
+        format_up = "<span background='#b48ead'>  %essid %ip </span>"
+        format_down = "<span background='#b48ead'>   D </span>"
 }
 
 volume master {
-        format = "<span background='#ebcb8b'>  %volume </span>"
-        format_muted = "<span background='#ebcb8b'>  Muted </span>"
+        format = "<span background='#ebcb8b'> VOL %volume </span>"
+        format_muted = "<span background='#ebcb8b'> VOL Muted </span>"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
@@ -66,6 +65,6 @@ battery 0 {
 
 tztime local {
 		format = "<span background='#81a1c1'> %time </span>"
-		format_time = " %d %b %H:%M"
+		format_time = "%d %b %H:%M"
 }
 
