@@ -47,9 +47,9 @@ bindsym $super+Shift+e exec code;workspace $ws3;focus
 bindsym $super+Shift+s exec slack;workspace $ws4;focus
 bindsym $super+Shift+f exec nemo;focus
 bindsym $super+$alt+f exec ranger;workspace $ws1;focus
-bindsym $super+a exec nordvpn connect;
+bindsym $super+Ctrl+a exec nordvpn connect;
 bindsym $super+Shift+a exec nordvpn disconnect;
-bindsym $super+$alt+a exec notify-send NordVPN "$(nordvpn status | grep Status)";
+bindsym $super+$alt+a exec notify-send NordVPN "$(nordvpn status)";
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse set Master 3%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse set Master 3%-
@@ -142,7 +142,7 @@ mode "launch" {
 
     bindsym Escape mode "default"
 }
-bindsym $super+Tab mode "launch"
+bindsym $super+Shift+Tab mode "launch"
 
 
 # window rules, you can find the window class using xprop
