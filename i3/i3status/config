@@ -53,7 +53,7 @@ volume master {
 }
 
 battery 0 {
-        format = "<span background='#a3be8c'>  %status %percentage </span>"
+        format = "<span background='#a3be8c'>  %status %percentage </span>"
         format_down = "No Battery"
         status_chr = "C"
         status_bat = "B"

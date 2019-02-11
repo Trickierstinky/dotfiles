@@ -1,3 +1,4 @@
+
 # set modifier
 set $super Mod4
 set $alt Mod1
@@ -87,10 +88,10 @@ bindsym $super+v split v
 bindsym $super+f fullscreen toggle
 
 # change container layout split
-bindsym $super+s layout split toggle
+bindsym $super+s layout toggle split
 
 # change container layout tabbed
-bindsym $super+w layout tabbed
+bindsym $super+w layout toggle stacked
 
 # toggle tiling / floating
 bindsym $super+space floating toggle
@@ -126,7 +127,7 @@ bindsym $super+Shift+r restart
 # exit i3
 bindsym $super+Shift+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
-exec --no-startup-id xautolock -time 10 -locker "i3lock-wrapper -l"
+exec --no-startup-id ~/.dotfiles/i3/i3exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -189,4 +190,3 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 # Screensaver and Power Management
 exec xset dpms 300
 exec xset led 2 # num lock
-exec xss-lock -- ~/.i3/i3exit lock
