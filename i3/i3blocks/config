@@ -2,12 +2,10 @@ command=~/.config/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
-[music]
-command=~/.dotfiles/i3/i3spotify/pystatus.py
-label=🎼
-interval=15
+[spotify]
+interval=10
 signal=11
-
+label=🎵
 
 [memory]
 interval=30
@@ -18,8 +16,10 @@ interval=15
 label=💻
 
 [volume]
+command=amixer -D pulse get Master | awk '$2== "Left:" {print $5}'
 interval=once
 signal=10
+label=🔊
 
 [disk]
 interval=60
@@ -30,12 +30,12 @@ interval=60
 command=disk /home 🏠
 
 [battery]
-command=battery BAT0
+command=acpi | cut -d " " -f3-5 |  sed -e "s/,//g;s/Discharging/🔋/;s/Charging/🔌/;s/Unknown/❓/;s/Full/⚡/;s/ 0*/ /g;s/ :/ /g"
 interval=5
-
-[clock]
-label=📅
-interval=30
 
 [internet]
 interval=10
+
+[clock]
+label=🕔
+interval=30
