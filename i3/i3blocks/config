@@ -33,7 +33,7 @@ interval=60
 command=disk /home 🏠
 
 [battery]
-command=acpi | cut -d " " -f3-5 |  sed -e "s/,//g;s/Discharging/🔋/;s/Charging/🔌/;s/Unknown/❓/;s/Full/⚡/;s/ 0*/ /g;s/ :/ /g"
+command=~/.config/i3blocks/battery.py
 interval=5
 
 [internet]
