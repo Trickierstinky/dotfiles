@@ -12,7 +12,7 @@ signal=11
 label=🎵
 
 [volume]
-command=amixer -D pulse get Master | awk '$2== "Left:" {print $5}'
+# command=amixer -D pulse get Master | awk '$2== "Left:" {print $5}'
 interval=1
 signal=10
 label=🔊
