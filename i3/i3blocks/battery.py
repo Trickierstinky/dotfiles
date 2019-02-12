@@ -43,6 +43,7 @@ else:
         time = commasplitstatus[-1].split()[0]
         time = ":".join(time.split(":")[0:2])
         timeleft = " ({})".format(time)
+        fulltext = "🔋 "
     elif state == "Full":
         fulltext = FA_PLUG + " "
     elif state == "Unknown":
