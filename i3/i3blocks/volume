@@ -61,6 +61,10 @@ volume() {
   amixer -D $MIXER get $SCONTROL $(capability)
 }
 
+status(){
+  volume | grep 'Front Left: ' | awk '{print $6}' | sed 's/[^a-zA-Z]//g'
+}
+
 format() {
 
   perl_filter='if (/.*\[(\d+%)\] (\[(-?\d+.\d+dB)\] )?\[(on|off)\]/)'
@@ -70,7 +74,22 @@ format() {
 
   perl_filter+='"; exit}'
   output=$(perl -ne "$perl_filter")
-  echo "$LABEL$output"
+
+  vol=$(echo "$output" | sed 's/[^0-9]//g')
+
+  if [ "$(status)" = 'off' ]; then
+    echo "🔇 "
+  else
+      if [ "$vol" -gt "70" ]; then
+        icon="🔊 "
+      elif [ "$vol" -lt "30" ]; then
+        icon="🔈 "
+      else
+        icon="🔉 "
+      fi
+
+    echo "$icon$output"
+  fi
 }
 
 #------------------------------------------------------------------------

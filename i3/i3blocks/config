@@ -15,7 +15,6 @@ label=🎵
 # command=amixer -D pulse get Master | awk '$2== "Left:" {print $5}'
 interval=1
 signal=10
-label=🔊
 
 [memory]
 interval=30
