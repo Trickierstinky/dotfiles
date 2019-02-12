@@ -2,6 +2,10 @@ command=~/.config/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
+[weather]
+interval=1800
+signal=12
+
 [spotify]
 interval=10
 signal=11
