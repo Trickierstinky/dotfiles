@@ -7,6 +7,12 @@ interval=10
 signal=11
 label=🎵
 
+[volume]
+command=amixer -D pulse get Master | awk '$2== "Left:" {print $5}'
+interval=1
+signal=10
+label=🔊
+
 [memory]
 interval=30
 label=🧠
@@ -14,12 +20,6 @@ label=🧠
 [cpu]
 interval=15
 label=💻
-
-[volume]
-command=amixer -D pulse get Master | awk '$2== "Left:" {print $5}'
-interval=once
-signal=10
-label=🔊
 
 [disk]
 interval=60
