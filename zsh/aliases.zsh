@@ -60,7 +60,7 @@ alias  gs='git status'
 alias  gl='git l'
 alias  gp='git pull'
 alias gaa='git add -A'
-alias gpa="git push ; git push bitbucket ; git push stash"
+# alias gpa="git push ; git push bitbucket ; git push stash"
 
 # Rails
 alias rs="./bin/rails s"
@@ -68,27 +68,12 @@ alias rc="./bin/rails c"
 alias kr="killrails"
 alias be="./bin/bundle exec"
 
-
-
-# Maven
-alias m='mvn-in-colors'
-compdef _mvn m=mvn
-MAVEN_SKIP_TESTS='-Dmaven.test.skip=true' # or -DskipTests
-alias   mc='alert printAndRun mvn-in-colors clean'
-alias   mt='alert printAndRun mvn-in-colors test'
-alias  mct='alert printAndRun mvn-in-colors clean test'
-alias  mcp='alert printAndRun mvn-in-colors clean package'
-alias mcpt='alert printAndRun mvn-in-colors clean package $MAVEN_SKIP_TESTS'
-alias  mpt='alert printAndRun mvn-in-colors package $MAVEN_SKIP_TESTS'
-alias  mci='alert printAndRun mvn-in-colors clean install'
-alias mcit='alert printAndRun mvn-in-colors clean install $MAVEN_SKIP_TESTS'
-alias  mdt='mvn dependency:tree'
-alias  msb='printAndRun mvn spring-boot:run'
-
 # NPM
 alias  ns='printAndRun npm start'
 alias  nt='printAndRun npm test'
 alias ntw='printAndRun npm run test:watch'
 
-# Scala SBT
-alias st='printAndRun sbt ~test-quick'
+alias edot='code ~/.dotfiles/'
+alias dwnld='cd ~/Downloads'
+alias sshots='cd ~/Pictures/Screenshots'
+alias pics='cd ~/Pictures'
