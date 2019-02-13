@@ -39,6 +39,10 @@ interval=5
 [internet]
 interval=10
 
+[nordvpn]
+label=🛰
+interval=5
+
 [clock]
 label=🕔
 interval=30

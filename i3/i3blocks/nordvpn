@@ -1,0 +1,17 @@
+#!/bin/bash
+
+case $BLOCK_BUTTON in
+	1) pgrep -x dunst >/dev/null && notify-send "<b>🛰 NordVPN status:</b>
+$(nordvpn status)
+" ;;
+esac
+
+STATUS=$(nordvpn status | awk '/Status:/{print $3}')
+
+if [ "$STATUS" = "Disconnected" ]; then
+  echo 🛑
+else
+  up=$(nordvpn status | awk '/Transfer:/{print $2$3}')
+  down=$(nordvpn status | awk '/Transfer:/{print $5$6}')
+  echo "🔺$up 🔻$down"
+fi
