@@ -7,7 +7,7 @@ interval=1800
 signal=12
 
 [spotify]
-interval=10
+interval=1
 signal=11
 label=🎵
 
