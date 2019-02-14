@@ -67,7 +67,7 @@ bindsym XF86AudioMute        exec --no-startup-id amixer -D pulse set Master 1+ 
 # music control
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl prev
-bindsym XF86AudioPlay exec playerctl toggle
+bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioStop exec playerctl stop
 
 # kill focused window
