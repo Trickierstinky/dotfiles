@@ -40,6 +40,7 @@ link_if_missing $PWD/termite/config       $HOME/.config/termite/config
 link_if_missing $PWD/dunst/dunstrc       $HOME/.config/dunst
 link_if_missing $PWD/i3/i3blocks  $HOME/.config/i3blocks
 link_if_missing $PWD/i3/scripts $HOME/.config/i3misc
+link_if_missing $PWD/compton/.compton.conf $HOME/.config/
 
 mkdir -p $HOME/Pictures/Screenshots
 

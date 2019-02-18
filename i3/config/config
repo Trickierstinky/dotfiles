@@ -31,7 +31,7 @@ gaps outer 5
 
 #autostart
 exec --no-startup-id xsettingsd &
-exec --no-startup-id compton -b
+exec --no-startup-id compton -b --config ~/.config/.compton.conf
 exec --no-startup-id ssh-agent
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
 exec_always ~/.config/i3misc/gnome-keyring.sh
