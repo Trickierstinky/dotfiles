@@ -2,7 +2,7 @@
 
 set +e
 
-pics_path="/home/tom/Pictures/_webcam_captures"
+pics_path="$HOME/Pictures/_webcam_captures"
 dest_file="$pics_path/$(date +%Y.%m.%d-%H:%M).png"
 
 mplayer -really-quiet -nolirc -vo png:outdir=$pics_path -frames 1 tv:// 2> /dev/null

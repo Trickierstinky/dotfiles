@@ -17,7 +17,8 @@ function link_if_missing() {
   fi
 }
 
-link_if_missing $PWD/bin                    $HOME/bin/
+ln -s $PWD/bin/* $HOME/bin/
+
 link_if_missing $PWD/bash                   $HOME/.bash
 link_if_missing $PWD/zsh                    $HOME/.zsh
 link_if_missing $PWD/vim                    $HOME/.vim
@@ -40,8 +41,9 @@ link_if_missing $PWD/termite/config       $HOME/.config/termite/config
 link_if_missing $PWD/dunst/dunstrc       $HOME/.config/dunst
 link_if_missing $PWD/i3/i3blocks  $HOME/.config/i3blocks
 link_if_missing $PWD/i3/scripts $HOME/.config/i3misc
+link_if_missing $PWD/compton/.compton.conf $HOME/.config/
 
-mkdir -p $HOME/Pictures/Screenshots
+mkdir -p $HOME/Pictures/Screenshots $HOME/Documents/Notes
 
 git clone https://github.com/riywo/ndenv  $HOME/.ndenv
 git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build

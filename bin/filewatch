@@ -1,0 +1,24 @@
+#!/bin/sh
+
+show_help() {
+  echo "Usage: ${0##*/} FILE PATTERN"
+}
+
+while true; do
+  case $1 in
+    -h|-\?|--help)
+      show_help
+      exit
+      ;;
+    *)
+      break
+  esac
+  shift
+done
+
+readonly file="$1"
+readonly pattern="$2"
+
+
+tail -fn0 $file | grep -n "$pattern"
+
