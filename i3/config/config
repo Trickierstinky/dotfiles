@@ -56,7 +56,7 @@ bindsym $super+Shift+e exec code;workspace $ws3;focus
 bindsym $super+Shift+s exec slack;workspace $ws4;focus
 bindsym $super+Shift+f exec nemo;focus
 bindsym $super+$alt+f exec ranger;workspace $ws1;focus
-bindsym $super+Ctrl+a exec nordvpn connect;
+bindsym $super+Ctrl+a exec nordvpn connect Manchester;
 bindsym $super+Shift+a exec nordvpn disconnect;
 bindsym $super+$alt+a exec notify-send NordVPN "$(nordvpn status)";
 
