@@ -48,3 +48,6 @@ if [ -f ~/.zshrc.local ]; then
 fi
 
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+
+# disable flow control
+stty -ixon
