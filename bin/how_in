@@ -1,0 +1,3 @@
+#!/bin/sh
+where="$1"; shift
+curl "https://cht.sh/$where/$*"
