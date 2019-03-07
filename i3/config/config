@@ -15,6 +15,10 @@ set $ws8 "8 💻"
 set $ws9 "9"
 set $ws0 "10 🤘"
 
+# General Settings
+focus_follows_mouse no
+
+
 # set font
 font pango: Noto Sans 8
 
