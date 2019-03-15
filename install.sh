@@ -43,6 +43,8 @@ link_if_missing $PWD/i3/i3blocks  $HOME/.config/i3blocks
 link_if_missing $PWD/i3/scripts $HOME/.config/i3misc
 link_if_missing $PWD/compton/.compton.conf $HOME/.config/
 
+cp -n $PWD/wakatime.cfg $HOME/wakatime.cfg
+
 mkdir -p $HOME/Pictures/Screenshots $HOME/Documents/Notes
 
 git clone https://github.com/riywo/ndenv  $HOME/.ndenv

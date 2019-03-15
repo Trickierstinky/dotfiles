@@ -33,6 +33,7 @@ if ! zgen saved; then
   zgen load johnhamelink/env-zsh
   zgen load cswl/zsh-rbenv
   zgen load theunraveler/zsh-fancy_ctrl_z
+  zgen load wbingli/zsh-wakatime
 
   zgen save
 fi

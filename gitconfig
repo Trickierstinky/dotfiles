@@ -1,6 +1,7 @@
 [user]
 	user = Matt Deloughry
-	email = matt@deloughry.com
+	email = matt@ledgardjepson.com
+	name = Matt Deloughry
 [alias]
 	co = checkout
 	ci = commit
